@@ -1,0 +1,9 @@
+url: https://test-stand.gb.ru/gateway/login
+username: "Friday"
+password: "c33b138a16"
+#username: "Ivan33"
+#password: "102dc62c67"
+url_api: https://test-stand.gb.ru/api/users/profile/
+description: "this is test new post"
+
+"""с закомментированными данными тест падает"""
