@@ -17,14 +17,13 @@ class TestSearchLocators:
 
 class OperationsHelper(BasePage):
     def enter_login(self, word):
-        return self.enter_text_into_field(TestSearchLocators.ids["LOCATOR_LOGIN_FIELD"], word, description="login form")
+        return self.enter_text_into_field(TestSearchLocators.ids["LOCATOR_LOGIN_FIELD"], word)
 
     def enter_pass(self, word):
-        return self.enter_text_into_field(TestSearchLocators.ids["LOCATOR_PASSWORD_FIELD"], word,
-                                          description="password form")
+        return self.enter_text_into_field(TestSearchLocators.ids["LOCATOR_PASSWORD_FIELD"], word)
 
     def click_login_button(self):
-        return self.click_button(TestSearchLocators.ids["LOCATOR_LOGIN_BTN"], description="button login")
+        return self.click_button(TestSearchLocators.ids["LOCATOR_LOGIN_BTN"])
 
     def get_auth_text(self):
         auth_check = self.find_element(TestSearchLocators.ids["LOCATOR_AUTH_FIELD"], time=3)
